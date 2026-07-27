@@ -41,7 +41,7 @@ MS-SWIFT is installed from source, and all dependencies are ready.
 
 Note: The versions of torch, vllm, and deepspeed may vary depending on your CUDA.
 
-### Таблица совместимости зависимостей
+### Dependency Compatibility Table
 
 | Lib             | CUDA 12.6                                | CUDA 13.0                              |
 |-----------------|------------------------------------------|----------------------------------------|
