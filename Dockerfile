@@ -83,7 +83,7 @@ RUN set -eux; \
 # ======================
 # Plugin
 # ======================
-COPY . /home/plugin-ms-swift
+COPY . /home/swift-grpo-plugin
 
 RUN if [ -f /workspace/plugin/requirements.txt ]; then \
         pip install -r /workspace/plugin/requirements.txt; \

@@ -179,19 +179,19 @@ flowchart LR
 ### Option 1: External Reward Function
 
 ```bash
-bash plugin-ms-swift/run_external_reward_func.sh
+bash swift-grpo-plugin/run_external_reward_func.sh
 ```
 
 ### Option 2: GRPO + LoRA + Colocate Mode
 
 ```bash
-bash plugin-ms-swift/run_lora.sh
+bash swift-grpo-plugin/run_lora.sh
 ```
 
 ### Option 3: GRPO + Colocate Mode (No LoRA)
 
 ```bash
-bash plugin-ms-swift/run_grpo_train.sh
+bash swift-grpo-plugin/run_grpo_train.sh
 ```
 
 ---

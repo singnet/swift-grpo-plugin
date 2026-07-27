@@ -11,7 +11,7 @@ swift rlhf \
     --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B \
     --reward_funcs accuracy_openr1_reward tag_count_openr1_reward format \
     --reward_weights 0.7 0.05 0.25 \
-    --external_plugins /home/plugin-ms-swift/plugin-grpo/reward_plugin.py \
+    --external_plugins /home/swift-grpo-plugin/plugin-grpo/reward_plugin.py \
     --use_vllm true \
     --vllm_mode colocate \
     --vllm_gpu_memory_utilization 0.4 \
