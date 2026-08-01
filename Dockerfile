@@ -48,8 +48,8 @@ RUN apt-get update && apt-get upgrade -y && \
 # ======================
 # ms-swift
 # ======================
-RUN git clone https://github.com/modelscope/ms-swift.git /home/ms-swift && \
-    cd /home/ms-swift && \
+RUN git clone https://github.com/modelscope/ms-swift.git /workspace/ms-swift && \
+    cd /workspace/ms-swift && \
     python3 -m pip install -e ".[all]"
 
 # ======================
@@ -83,9 +83,9 @@ RUN set -eux; \
 # ======================
 # Plugin
 # ======================
-COPY . /home/swift-grpo-plugin
+COPY . /workspace/swift-grpo-plugin
 
-RUN if [ -f /workspace/plugin/requirements.txt ]; then \
+RUN if [ -f /workspace/swift-grpo-plugin/requirements.txt ]; then \
         pip install -r /workspace/plugin/requirements.txt; \
     else \
         echo "No requirements.txt found for plugin, skipping..."; \
