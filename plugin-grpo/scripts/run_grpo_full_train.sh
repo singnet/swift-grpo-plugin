@@ -11,7 +11,7 @@ swift rlhf \
     --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B \
     --reward_funcs accuracy_openr1_reward tag_count_openr1_reward format \
     --reward_weights 0.7 0.05 0.25 \
-    --external_plugins /home/swift-grpo-plugin/plugin-grpo/reward_plugin.py \
+    --external_plugins /workspace/swift-grpo-plugin/plugin-grpo/reward_plugin.py \
     --use_vllm true \
     --vllm_mode colocate \
     --vllm_gpu_memory_utilization 0.4 \
@@ -32,12 +32,12 @@ swift rlhf \
     --save_total_limit 2 \
     --logging_steps 50 \
     --max_length 4096 \
-    --output_dir output \
+    --output_dir /workspace/output \
     --warmup_ratio 0.05 \
     --dataloader_num_workers 4 \
     --dataset_num_proc 4 \
     --num_generations 2 \
     --temperature 0.9 \
-    --system '/home/ms-swift/examples/train/grpo/prompt.txt' \
+    --system '/workspace/ms-swift/examples/train/grpo/prompt.txt' \
     --deepspeed zero2 \
     --log_completions true
